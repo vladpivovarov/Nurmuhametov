@@ -1,0 +1,24 @@
+.examples {
+  padding: 65px 0 80px;
+  background-image: url("../img/examples.webp");
+  background-size: cover;
+}
+
+.examples__container {
+  @media (max-width: 1700px) {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.examples__title {
+  margin-bottom: 45px;
+  margin-left: 0;
+  align-self: flex-start;
+
+  @media (max-width: 1700px) {
+    margin-left: 10px;
+  }
+}

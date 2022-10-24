@@ -1,0 +1,147 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 15px;
+  color: $white;
+
+  @media (max-width: 1200px) {
+    padding-top: 30px;
+  }
+}
+
+.header__logo {
+  @media (max-width: 1200px) {
+    margin-left: 15px;
+  }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__right {
+  display: flex;
+  flex-grow: 1;
+
+  @media (max-width: 1200px) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 10000px;
+    left: -10000px;
+    z-index: 4;
+    background-color: $black;
+    flex-direction: column;
+    justify-content: center;
+    transform: scale(0.5);
+    opacity: 0;
+    border-radius: 100px;
+    transition: transform 0.3s, opacity 0.3s, border-radius 0.3s;
+  }
+
+  &_active {
+    right: 0;
+    left: 0;
+    transform: scale(1);
+    opacity: 1;
+    border-radius: 0px;
+  }
+}
+
+.header__nav {
+  flex-grow: 1;
+  justify-self: center;
+
+  @media (max-width: 1200px) {
+    flex-grow: 0;
+    justify-self: top;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgba(#000, .1);
+    margin-bottom: 40px;
+
+    & .nav__link {
+      display: block;
+      padding: 15px;
+      font-size: 22px;
+    }
+  }
+}
+
+.header__burger {
+  position: absolute;
+  top: 0px;
+  right: -10000px;
+  z-index: 6;
+  padding: 35px 15px 15px 15px;
+  background-color: transparent;
+  border: none;
+
+  &.open {
+    position: fixed;
+  }
+
+  & span {
+    display: block;
+    position: absolute;
+    height: 1.7px;
+    width: 100%;
+    border-radius: 15px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    background-color: $beige;
+  }
+
+  @media (max-width: 1200px) {
+    top: 0;
+    right: 0;
+  }
+}
+
+.header__burger-inner {
+  position: relative;
+  width: 45px;
+  height: 20px;
+}
+
+.header__burger span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.header__burger span:nth-child(2) {
+  top: 10px;
+  transform-origin: left center;
+}
+
+.header__burger span:nth-child(3) {
+  top: 19px;
+  transform-origin: left center;
+}
+
+.header__burger.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: -3px;
+  left: 6px;
+  width: 29px;
+}
+
+.header__burger.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.header__burger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 17.33px;
+  left: 6px;
+  width: 29px;
+}

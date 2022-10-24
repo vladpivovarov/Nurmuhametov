@@ -1,0 +1,29 @@
+.socials {
+  display: flex;
+  gap: 35px;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+
+.socials_about {
+  margin-bottom: 17px;
+}
+
+.socials__desc {
+  order: 1;
+}
+
+.socials__icon {
+  width: 45px;
+  min-width: 45px;
+  height: 45px;
+}
+
+.socials__link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 22px;
+}

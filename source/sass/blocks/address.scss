@@ -1,0 +1,21 @@
+.address {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.address__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.address__icon {
+  width: 25px;
+  min-width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+
+.address__img {
+  max-width: 100%;
+}

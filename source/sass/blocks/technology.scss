@@ -1,0 +1,25 @@
+.technology {
+  padding: 65px 0;
+}
+
+.technology__container {
+  padding: 0 20px;
+}
+
+.technology__title {
+  margin-bottom: 45px;
+  font-size: 55px;
+
+  @media (max-width: 768px) {
+    margin-left: -10px;
+    display: inline-block;
+    font-size: 28px;
+  }
+}
+
+.technology__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}

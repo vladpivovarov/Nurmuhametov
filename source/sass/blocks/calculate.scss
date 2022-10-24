@@ -1,0 +1,153 @@
+.calculate {
+  max-width: 1013px;
+  border: 2px solid $beige;
+  border-radius: 15px;
+  padding: 25px 70px 29px 49px;
+
+  @media (max-width: 768px) {
+    padding: 35px 14px;
+  }
+}
+
+.calculate__title {
+  margin: 0 0 25px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: $beige;
+}
+
+.calculate__wrap {
+  display: flex;
+  gap: 62px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 52px;
+  }
+}
+
+.calculate__left {
+  flex-shrink: 0;
+  width: 55%;
+
+  @media (max-width: 768px) {
+    flex-shrink: 1;
+    width: 100%;
+  }
+}
+
+.calculate__subtitle {
+  margin-bottom: 15px;
+}
+
+.calculate__row {
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.calculate__row-title {
+  margin-bottom: 25px;
+}
+
+.calculate__row-title_num {
+  margin-bottom: 64px;
+}
+
+.calculate__checkbox-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.calculate__visually-checkbox {
+  width: 25px;
+  height: 25px;
+  margin-right: 12px;
+  border: 2px solid $beige;
+}
+
+.calculate__checkbox:checked + .calculate__visually-checkbox {
+  background-image: url("../img/check.svg");
+  background-position: center center;
+  background-size: 12.5px;
+  background-repeat: no-repeat;
+}
+
+.calculate__subtitle_step2 {
+  margin-bottom: 28px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+.calculate__input {
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.calculate__input_phone {
+  margin-bottom: 29px;
+}
+
+.calculate__button {
+  width: 100%;
+  padding: 10px 80px 7px;
+  border-radius: 15px;
+  border: none;
+  background-color: $beige;
+  color: $white;
+  text-align: center;
+  outline: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    padding: 10px 20px 8px;
+  }
+}
+
+.title-num {
+  display: flex;
+}
+
+.title-num__text {
+  margin-right: 10px;
+}
+
+.title-num__input {
+  width: 48px;
+  height: 23px;
+  line-height: 23px;
+  border-radius: 10px;
+  background-color: $white;
+  font-size: 14px;
+  color: $beige;
+  text-align: center;
+  font-weight: 500;
+  border: none;
+  outline: none;
+
+  &:focus {
+    outline: none;
+    border: 2px solid $beige;
+  }
+}
+
+.calculate__personal {
+  margin-top: 52px;
+  font-size: 12px;
+  text-align: center;
+
+  & a {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 28px;
+  }
+}

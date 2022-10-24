@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.nav__link {
+ padding: 13px;
+ font-size: 14px;
+ transition: color 0.3s;
+
+ &.active {
+  color: $beige;
+ }
+
+ &:hover {
+  color: $beige;
+ }
+}
+

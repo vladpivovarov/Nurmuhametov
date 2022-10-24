@@ -1,0 +1,22 @@
+.title {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding-bottom: 5px;
+  font-size: 50px;
+  font-weight: 600;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: -4000px;
+    height: 4px;
+    background-color: $white;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
+}

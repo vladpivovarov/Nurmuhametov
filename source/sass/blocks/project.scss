@@ -1,0 +1,46 @@
+.project {
+  padding: 65px 0;
+}
+
+.project__title {
+  margin-bottom: 70px;
+
+  @media (max-width: 768px) {
+    display: inline-block;
+    font-size: 28px;
+  }
+}
+
+.project__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: left;
+
+  @media (max-width: 1600px) {
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+  }
+}
+
+.project__item {
+  width: 500px;
+
+  & .box__inner {
+    padding: 35px 26px;
+  }
+
+  &:last-child {
+    align-self: flex-start;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+
+    & .box__inner {
+      padding: 35px 13px;
+      font-size: 18px;
+    }
+  }
+}
