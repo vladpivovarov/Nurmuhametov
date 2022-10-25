@@ -7,16 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Проектирование частных каркасных домов по всей России и СНГ | nurmuhametov.ru</title>
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="./img/android-chrome-192x1.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./img/android-chrome-192x1.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="./img/android-chrome-192x1.png">
-  <link rel="apple-touch-startup-image" href="./img/android-chrome-192x1.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+  <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet" />
   <script src="./js/additionally/scroll.min.js" defer></script>
   <script src="./js/additionally/modernizr-custom.js" async></script>
   <script src="./js/additionally/swiper-bundle.min.js" defer></script>
   <script src="./js/additionally/jquery.min.js" defer></script>
   <script src="./js/additionally/jquery-ui.min.js" defer></script>
+  <script src="https://vjs.zencdn.net/7.20.3/video.min.js" defer></script>
   <script src="./js/main.js" defer></script>
   </script>
 </head>
@@ -97,19 +100,19 @@
                 Смотреть видео
               </div>
             </a>
-            <form action="#" method="post" class="hero__form form">
+            <form action="#" method="post" class="hero__form form form-animate">
               <div class="form__desc">
                 Оставьте свой номер телефона и узнайте стоимость проекта
               </div>
-              <input type="text" class="form__input input" placeholder="Введите Ваше имя">
-              <input type="text" class="form__input input form__input__tel mask-phone-js"
+              <input type="text" name="name" class="form__input input _req" placeholder="Введите Ваше имя">
+              <input type="text" name="phone" class="form__input input _req form__input__tel mask-phone-js"
                 placeholder="Введите Ваш номер телефона">
               <button type="submit" class="form__submit">
                 УЗНАТЬ СТОИМОСТЬ
               </button>
               <div class="form__confirmation">
                 Нажимая на кнопку Отправить, Вы даете свое согласие на
-                <a href="#" target="_blank">обработку персональных данных</a>
+                <a href="https://otdel-prodazh.center/politika" target="_blank">обработку персональных данных</a>
               </div>
             </form>
             <div class="hero__img">
@@ -151,7 +154,7 @@
               </div>
               <ul class="socials socials_about">
                 <li class="socials__item">
-                  <a href="#" class="socials__link">
+                  <a href="https://vk.com/zahar1122" target="_blank" class="socials__link">
                     <div class="socials__desc">
                       Профиль ВК
                     </div>
@@ -161,7 +164,7 @@
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a href="#" class="socials__link">
+                  <a href="https://t.me/zahar_zhivoy" class="socials__link" target="_blank">
                     <div class="socials__desc">
                       Написать в Telegram
                     </div>
@@ -182,7 +185,7 @@
             </h2>
             <div class="slider">
               <div class="slider__wrapper">
-                <div class="slider__screen">
+                <article class="slider__screen">
                   <div class="slide">
                     <div class="slide__left">
                       <div class="slide__image-block box box_image">
@@ -255,156 +258,8 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="slider__screen">
-                  <div class="slide">
-                    <div class="slide__left">
-                      <div class="slide__image-block box box_image">
-                        <div class="box__inner">
-                          <img src="./img/project1.webp" alt="Проект дома 1" class="slide__img  box__img" width="638px"
-                            height="638px">
-                        </div>
-                      </div>
-                      <div class="slide__download-block">
-                        <a href="./files/Test.pdf" class="slide__download-link" download target="_blank">
-                          Скачать пример проекта в PDF
-                        </a>
-                      </div>
-                    </div>
-                    <div class="slide__right">
-                      <h3 class="slide__title">
-                        СОСТАВ ПРОЕКТА
-                      </h3>
-                      <div class="slide__desc">
-                        <div class="slide__desc-line">
-                          В эскизный проект (ЭП) входит:
-                        </div>
-                        <ol class="slide__main-list">
-                          <li>
-                            <div class="slide__desc-line">
-                              1. Эскизная часть проекта:
-                            </div>
-                            <ul class="slide__sub-list">
-                              <li>— Общие данные</li>
-                              <li>— Планы этажей</li>
-                              <li>— Фасады</li>
-                              <li>— Разрезы</li>
-                              <li>— План кровли</li>
-                              <li>— Ведомость окон и дверей</li>
-                            </ul>
-                            <p class="slide__p">
-                              Стоимость раздела ЭП –
-                              <strong> от 150 руб./кв.м </strong>
-                              (в зависимости от сложности проекта)
-                            </p>
-                          </li>
-                          <li>
-                            <div class="slide__desc-line">
-                              2. Конструктивный раздел (КР):
-                            </div>
-                            <ul class="slide__sub-list">
-                              <li>— Пояснительная записка, Общие данные</li>
-                              <li>— План фундамента - свайное поле</li>
-                              <li>— Схемы сборки перекрытий</li>
-                              <li>— Схемы сборки стен</li>
-                              <li>— Схемы сборки стропильной системы (систем)</li>
-                              <li>— Спецификация пиломатериала</li>
-                              <li>— Узлы силового каркас</li>
-                              <li>— Все пироги: полы, перекрытия, стены, кровля.</li>
-                            </ul>
-                            <p class="slide__p">
-                              Стоимость раздела КР –
-                              <strong> от 250 руб./кв.м </strong>
-                              (в зависимости от сложности проекта)
-                            </p>
-                          </li>
-                          <li>3. Карта раскроя пиломатериала</li>
-                          <li>4. Два bimx файла (для просмотра 3D модели дома на компьютере, планшете или телефоне)</li>
-                        </ol>
-                        <p class="slide__p-m-bottom">
-                          Стоимость проекта общая –
-                          <strong> от 400 руб./кв.м </strong>
-                          (в зависимости от сложности проекта)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </article>
 
-                <div class="slider__screen">
-                  <div class="slide">
-                    <div class="slide__left">
-                      <div class="slide__image-block box box_image">
-                        <div class="box__inner">
-                          <img src="./img/project1.webp" alt="Проект дома 1" class="slide__img  box__img" width="638px"
-                            height="638px">
-                        </div>
-                      </div>
-                      <div class="slide__download-block">
-                        <a href="./files/Test.pdf" class="slide__download-link" download target="_blank">
-                          Скачать пример проекта в PDF
-                        </a>
-                      </div>
-                    </div>
-                    <div class="slide__right">
-                      <h3 class="slide__title">
-                        СОСТАВ ПРОЕКТА
-                      </h3>
-                      <div class="slide__desc">
-                        <div class="slide__desc-line">
-                          В эскизный проект (ЭП) входит:
-                        </div>
-                        <ol class="slide__main-list">
-                          <li>
-                            <div class="slide__desc-line">
-                              1. Эскизная часть проекта:
-                            </div>
-                            <ul class="slide__sub-list">
-                              <li>— Общие данные</li>
-                              <li>— Планы этажей</li>
-                              <li>— Фасады</li>
-                              <li>— Разрезы</li>
-                              <li>— План кровли</li>
-                              <li>— Ведомость окон и дверей</li>
-                            </ul>
-                            <p class="slide__p">
-                              Стоимость раздела ЭП –
-                              <strong> от 150 руб./кв.м </strong>
-                              (в зависимости от сложности проекта)
-                            </p>
-                          </li>
-                          <li>
-                            <div class="slide__desc-line">
-                              2. Конструктивный раздел (КР):
-                            </div>
-                            <ul class="slide__sub-list">
-                              <li>— Пояснительная записка, Общие данные</li>
-                              <li>— План фундамента - свайное поле</li>
-                              <li>— Схемы сборки перекрытий</li>
-                              <li>— Схемы сборки стен</li>
-                              <li>— Схемы сборки стропильной системы (систем)</li>
-                              <li>— Спецификация пиломатериала</li>
-                              <li>— Узлы силового каркас</li>
-                              <li>— Все пироги: полы, перекрытия, стены, кровля.</li>
-                            </ul>
-                            <p class="slide__p">
-                              Стоимость раздела КР –
-                              <strong> от 250 руб./кв.м </strong>
-                              (в зависимости от сложности проекта)
-                            </p>
-                          </li>
-                          <li>3. Карта раскроя пиломатериала</li>
-                          <li>4. Два bimx файла (для просмотра 3D модели дома на компьютере, планшете или телефоне)</li>
-                        </ol>
-                        <p class="slide__p-m-bottom">
-                          Стоимость проекта общая –
-                          <strong> от 400 руб./кв.м </strong>
-                          (в зависимости от сложности проекта)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
               <button class="slider__button-prev">
                 <div class="slider__button-inner">
@@ -670,7 +525,8 @@
             </h2>
             <div class="slider-reviews">
               <div class="slider-reviews__wrapper">
-                <div class="slider-reviews__screen">
+
+                <article class="slider-reviews__screen">
                   <div class="slide-reviews">
                     <div class="slider-reviews__left">
                       <div class="slider-reviews__img-block box box_image">
@@ -699,37 +555,8 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="slider-reviews__screen">
-                  <div class="slide-reviews">
-                    <div class="slider-reviews__left">
-                      <div class="slider-reviews__img-block box box_image">
-                        <div class="box__inner">
-                          <img src="./img/project1.webp" alt="Проект дома 1" class="slider-reviews__img box__img"
-                            width="638px" height="638px">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slider-reviews__right">
-                      <h3 class="slider-reviews__title">
-                        Имя Фамилия, проект
-                      </h3>
-                      <p>
-                        Это просто “рыба” — случайный текст. Предварительные выводы неутешительны:
-                        социально-экономическое
-                        развитие выявляет срочную потребность поставленных обществом задач. Имеется спорная точка
-                        зрения,
-                        гласящая примерно следующее: диаграммы связей, вне зависимости от их уровня, должны быть описаны
-                        максимально подробно. Повседневная практика показывает, что существующая теория создаёт
-                        предпосылки для анализа существующих паттернов поведения. В частности, высокое качество
-                        позиционных исследований напрямую зависит от модели развития. Кстати, предприниматели в сети
-                        интернет, инициированные исключительно синтетически, ограничены исключительно образом мышления.
-                        Безусловно, экономическая повестка сегодняшнего дня представляет собой интересный эксперимент
-                        проверки прогресса профессионального сообщества.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                </article>
+
               </div>
               <button class="slider-reviews__button-prev">
                 <div class="slider-reviews__button-inner">
@@ -925,7 +752,7 @@
                     </div>
                   </li>
                 </ul>
-                <form action="#" method="post" class="design__form calculate">
+                <form action="#" id="calculate" method="post" class="design__form calculate form-animate">
                   <h3 class="calculate__title">
                     Заполните поля ниже и получите расчёт стоимости проекта и ответы на другие вопросы касательно
                     проекта
@@ -940,18 +767,20 @@
                           Количество этажей
                         </div>
                         <label class="calculate__checkbox-row">
-                          <input type="radio" name="floor" value="1" class="calculate__checkbox visually-hidden">
+                          <input type="radio" id="calculate1" name="floor" value="1"
+                            class="calculate__checkbox visually-hidden">
                           <div class="calculate__visually-checkbox"></div>
                           <div class="calculate__checkbox-text">1 этаж</div>
                         </label>
                         <label class="calculate__checkbox-row">
-                          <input type="radio" name="floor" value="1.5" checked
+                          <input type="radio" id="calculate15" name="floor" value="1.5" checked
                             class="calculate__checkbox visually-hidden">
                           <div class="calculate__visually-checkbox"></div>
                           <div class="calculate__checkbox-text">1.5 этажа (мансарда)</div>
                         </label>
                         <label class="calculate__checkbox-row">
-                          <input type="radio" name="floor" value="2" class="calculate__checkbox visually-hidden">
+                          <input type="radio" id="calculate2" name="floor" value="2"
+                            class="calculate__checkbox visually-hidden">
                           <div class="calculate__visually-checkbox"></div>
                           <div class="calculate__checkbox-text">2 этажа</div>
                         </label>
@@ -959,11 +788,12 @@
                       <div class="calculate__row">
                         <div class="calculate__row-title calculate__row-title_num title-num">
                           <div class="title-num__text">Площадь объекта:</div>
-                          <input type="text" class="title-num__input" value="40"></input>
+                          <input type="text" id="calculateArea" name="area" class="title-num__input _req"
+                            value="80"></input>
                         </div>
                         <div class="calculate__line line">
                           <div class="line__active-num">
-                            40
+                            80
                           </div>
                           <div class="line__start-num">
                             20
@@ -978,8 +808,10 @@
                       <div class="calculate__subtitle calculate__subtitle_step2">
                         Шаг 2. Укажите Ваши данные
                       </div>
-                      <input type="text" class="calculate__input input" placeholder="Введите Ваше имя">
-                      <input type="text" class="calculate__input input calculate__input_phone mask-phone-js"
+                      <input type="text" id="calculateName" name="name" class="calculate__input input _req"
+                        placeholder="Введите Ваше имя" novalidate>
+                      <input type="text" id="calculatePhone" name="phone"
+                        class="calculate__input input calculate__input_phone mask-phone-js _req"
                         placeholder="Введите Ваш номер телефона">
                       <button type="submit" class="calculate__button">
                         ПОЛУЧИТЬ РАСЧЁТ СТОИМОСТИ ПРОЕКТА
@@ -988,7 +820,7 @@
                   </div>
                   <div class="calculate__personal">
                     Нажимая на кнопку Получить расчёт, Вы даете свое согласие на
-                    <a href="#"> обработку персональных данных</a>
+                    <a href="https://otdel-prodazh.center/politika" target="_blank"> обработку персональных данных</a>
                   </div>
                 </form>
               </div>
@@ -1015,7 +847,7 @@
         </a>
         <ul class="socials footer__socials">
           <li class="socials__item">
-            <a href="#" class="socials__link">
+            <a href="https://vk.com/zahar1122" target="_blank" class="socials__link">
               <div class="socials__desc">
                 Профиль ВК
               </div>
@@ -1025,7 +857,7 @@
             </a>
           </li>
           <li class="socials__item">
-            <a href="#" class="socials__link">
+            <a href="https://t.me/zahar_zhivoy" target="_blank" class="socials__link">
               <div class="socials__desc">
                 Написать в Telegram
               </div>
@@ -1066,7 +898,7 @@
             </li>
           </ul>
         </address>
-        <a href="#" class="privacy footer__privacy">
+        <a href="https://otdel-prodazh.center/politika" target="_blank" class="privacy footer__privacy">
           Политика конфиденциальности
         </a>
         <div class="copyright footer__copyright">
@@ -1087,21 +919,31 @@
       </div>
     </footer>
     <div class="modal modal__call">
-      <div class="modal__inner">
+      <div class="modal__inner form-animate">
         <button class="modal__close"></button>
         <div class="modal__title">
           Введите ваш номер телефона
         </div>
-        <form class="modal__row">
-          <input type="text" class="modal__input input mask-phone-js" placeholder="Ваш номер телефона">
+        <form class="modal__row modal__form">
+          <input type="text" name="phone" class="modal__input input mask-phone-js _req"
+            placeholder="Ваш номер телефона">
           <button class="modal__button">
             Перезвоните мне
           </button>
         </form>
         <div class="modal__privacy">
           Нажимая на кнопку Отправить, Вы даете свое согласие на
-          <a href="#"> обработку персональных данных</a>
+          <a href="https://otdel-prodazh.center/politika" target="_blank"> обработку персональных данных</a>
         </div>
+      </div>
+    </div>
+    <div class="modal-video">
+      <div class="modal-video__inner">
+        <video id="my-video" class="video-js vjs-theme-forest modal-video__video" controls preload="auto" width="1200"
+          height="600" data-setup="{}">
+          <source src="files/video.mp4" type="video/mp4" />
+        </video>
+        <div class="close"></div>
       </div>
     </div>
   </div>

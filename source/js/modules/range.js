@@ -3,14 +3,16 @@ const range = () => {
   const valArray = document.querySelectorAll(".val");
   const activeNum = document.querySelector(".line__active-num");
   const input = document.querySelector(".title-num__input");
-  let left;
+  let left = 80;
+
+  activeNum.style.left = (left * 100) / 480 + "%";
 
   $(function () {
     $('.line').slider({
       range: 'min',
       min: 20,
       max: 500,
-      value: 40,
+      value: 80,
       slide: function (event, ui) {
         let val = ui.value;
 

@@ -8,7 +8,10 @@ import slider from "./modules/slider";
 import sliderReviews from "./modules/sliderReviews";
 import mask from "./modules/mask";
 import menu from "./modules/menu";
-
+import calculateForm from "./modules/calculateForm";
+import heroForm from "./modules/heroForm";
+import modalForm from "./modules/modalForm";
+import video from "./modules/video";
 
 checkJs();
 slider();
@@ -20,3 +23,7 @@ date();
 modal();
 mask();
 menu();
+calculateForm();
+heroForm();
+modalForm();
+video();

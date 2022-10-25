@@ -11,6 +11,7 @@ const slider = () => {
 
     // Количество сладов для показа
     slidesPerView: "auto",
+    loop: true,
 
     autoplay: {
       delay: 5000,
